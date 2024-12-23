@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    background-color: #5d5d5d;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.logo img{
+    width: 100px;
+    border-radius: 24px;
+}
+.logo img:hover{
+    opacity: 0.7;
+}
+.left{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    left: 35%;
+}
+.right{
+    font-size: 30px;
+    position: relative;
+    left: 35%;
+}
+.right ul{
+    list-style: none;
+    display: flex;
+    gap: 55px;
+    position: absolute;
+    top: 20%;
+}
+.right li{
+    width: 300px;
+    background-color: #888888;
+    text-align: center;
+    border-radius: 12px;
+    padding: 3px;
+}
+.right a{
+    text-decoration: none;
+    color: rgb(78, 65, 90);
+    letter-spacing: 0px;
+    opacity: 1;
+    transition: all 0.8s linear;
+}
+.right a:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+.bar-left{
+    font-size: 30px;
+    width: 650px;
+    border: 1px solid;
+    height: 1000px;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.selection{
+    margin: 50px;
+}
+.selection form{
+    display: flex;
+    flex-direction: column;
+}
+.selection input{
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: #888888;
+}
+/* .selection input[type="checkbox"]{
+    padding: 10px;
+} */
+.selection p{
+    color: blue;
+    font-size: 1.5em;
+    transition: all 0.7s linear;
+    letter-spacing: 0px;
+}
+.selection p:hover{
+    letter-spacing: 4px;
+}
+.selection input::placeholder{
+    font-size: 24px;
+    letter-spacing: 0px;
+    transition: all 0.7s linear;
+    color: aliceblue;
+}
+.selection input::placeholder:hover{
+    letter-spacing: 3px;
+}
+.choose-colour{
+    text-align: center;
+    height: 300px;
+}
+.choose-colour select{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(35, 34, 66);
+    color: #FFF;
+}
+.choose-colour p{
+    font-size: 44px;
+}
+.ball-1, .ball-2, .ball-3, .ball-4, .ball-5{
+    border: 1px solid;
+    width: 120px;
+    height: 120px;
+    border-radius: 64px;
+    position: relative;
+    object-fit: cover;
+}
+.balls{
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    top: 55%;
+}
+.ball-1 a, .ball-2 a, .ball-3 a, .ball-4 a, .ball-5 a{
+    position: absolute;
+    top: 30%;
+    font-size: 25px;
+    left: 3%;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #c6c6c6;
+}
+.ball-1{
+    background-image: url(https://th.bing.com/th/id/OIP.xTHKMGMX1hu-xUJD-eLtBgHaEK?rs=1&pid=ImgDetMain);
+}
+.ball-2{
+    background-image:  url(https://th.bing.com/th/id/OIP.32RO18berXCWQFVa0LGJwgHaEK?rs=1&pid=ImgDetMain);
+}
+.ball-3{
+    background-image: url(https://th.bing.com/th/id/OIP.DAdfJo6_lBAzh0Frq9DYGQHaEK?rs=1&pid=ImgDetMain);
+}
+.ball-4{
+    background-image: url(https://www.elcarrocolombiano.com/wp-content/uploads/2022/10/29102022-PORTADA-Toyota-Prius.jpg);
+}
+.ball-5{
+    background-image: url(https://wokolmotoryzacji.pl/wp-content/uploads/2021/01/2024-lada-niva-rendering-front.jpg);
+}
+.bar-left h5{
+    width: 450px;
+    position: absolute;
+    left: 15%;
+    top: 90%;
+}
+.cards{
+    border: 1px solid;
+    width: 2000px;
+    height: 1000px;
+    position: absolute;
+    left: 23%;
+    top: 10.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 0px 0px 12px 12px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 12px;
+    width: 800px;
+    height: 300px;
+    font-size: 30px;
+    position: relative;
+    left: 30%;
+    background-color: #c6c6c6;
+}
+.card img{
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    height: 170px;
+    border-radius: 0px 12px 12px 0px;
+}
+.rate i{
+    color: crimson;
+    animation-name: star;
+    animation-duration: 5s;
+    transition: all 0.7s ease;
+    animation-iteration-count: 5;
+    cursor: pointer;
+}
+.rate i:hover{
+    color: green;
+}
+@keyframes star{
+    0%{
+        color: red;
+    }
+    50%{
+        color: rgb(255, 128, 0);
+    }
+    100%{
+        color: brown;
+    }
+}
